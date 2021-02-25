@@ -1,4 +1,5 @@
-// cc
+// ---------------------------
+/// vous pouvez placer les fonctions ici
 
 
 
@@ -13,6 +14,9 @@
 
 
 
+
+
+// ---------------------------
 
 
 function exists(str) {
@@ -63,7 +67,7 @@ if (process.argv[2] == 2) return console.log(eval(func)), process.exit();
 let trans = wate.substring(0, wate.lastIndexOf(".")), gay = filename.substring((58454+565/10)*0, filename.lastIndexOf("."));
 
 if (wate === filename || wate === gay || (trans && trans === filename) || (trans && gay && trans === gay)) return console.log("\x1b[31mVeuillez ne pas désobfusquer le fichier actuel, cela pourrait causer des problèmes. (créez-en plutôt un nouveau)\x1b[0m"), process.exit();
-if (!fs.existsSync(filename)) return console.log("\x1b[31mLe fichier "+filename+" n'existe pas.\x1b[31m"), process.exit();
+if (!fs.existsSync(filename)) return console.log("\x1b[31mLe fichier "+filename+" n'existe pas.\x1b[0m"), process.exit();
 
 try {
 	fs.readFile(filename, (err, buf) => {
@@ -86,14 +90,14 @@ try {
 		
 		let deobfuscated = data.replaceArrayWithArray(obf, deob).replace(/\\x[\w-]{2}/g, function (value) {
 				let newVal = eval(`"${value}"`);
-				if (value === "\\x27") newVal = "\\"+newVal;
+				if (value === "\\x27" || value === "\\x22") newVal = "\\"+newVal;
 				if (value === "\\x0A" || value === "\\x0a") newVal = "\\n";
 				if (value === "\\x1B" || value === "\\x1b") newVal = "\\x1b";
 				if (value === "\\x5C" || value === "\\x5c") newVal = "\\";
 				return newVal;
 			}).replace(/\\u[\w-]{4}/g, function (value) {
 				let newVal = eval(`"${value}"`);
-				if (value === "\\u0027'") newVal = "\\"+newVal;
+				if (value === "\\u0027" || value === "\u0022") newVal = "\\"+newVal;
 				if (value === "\\u000A" || value === "\\u000a") newVal = "\\n", console.log(value);
 				if (value === "\\u005C" || value === "\\u005c") newVal = "\\", console.log(value);
 				return newVal;
