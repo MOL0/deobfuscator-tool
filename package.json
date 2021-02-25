@@ -1,0 +1,15 @@
+{
+  "name": "deobfuscator-tool",
+  "version": "1.0.0",
+  "description": "Un tool pour désobfusquer les scripts obfusqués avec obfuscator.io (dev par molo#0001).",
+  "main": "code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "mol0"
+  },
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
