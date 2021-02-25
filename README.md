@@ -1,4 +1,4 @@
-# deobfuscator tool v1.0 by molo (beta)
+# deobfuscator tool v1.0 by molo
 Pour utiliser le tool, téléchargez le zip, extrayez le dans un dossier et mettez le fichier à désobfusquer dans ce dossier.  
 Ensuite il va falloir copier les fonction de "désobfuscation" (toute les fonctions avant le début du code). Pour les trouver je vous conseille de rechercher `require` et de copier tout ce qu'il y a avant.  
 Mettez les dans **code.js**, et ouvrez **start.bat**.  
