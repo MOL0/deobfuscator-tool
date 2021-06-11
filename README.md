@@ -26,7 +26,7 @@ La version que vous venez d'obtenir n'est pas totalement deob mais déjà plus l
 ce n'est pas grave, c'est juste que vos fonctions de désobfuscation se trouvent à un autre endroit
 ![require3](./images/1337.png)  
 copiez donc les fonctions de désobfuscation (en rouge) et collez les dans code.js  
-si vous n'avez toujours pas compris contactez moi sur discord (molo#7947)  
+si vous n'avez toujours pas compris contactez moi sur discord (molo#0001)  
 **6** ouvrez cmd dans ce dossier (ouvrez cmd et faites `cd C:/dossier` ou `cd /d X:/dossier`)  
 **7** faites `node -v` et vérifiez que votre version est bien supérieure à la v12 (comme sur le screen)  
 ![version](./images/version.png)  
